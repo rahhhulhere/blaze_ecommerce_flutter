@@ -1,0 +1,6 @@
+package com.blaze.blaze
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
