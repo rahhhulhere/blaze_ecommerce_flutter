@@ -1,3 +1,4 @@
+import 'package:blaze/view/screens/onboarding/loggedin.dart';
 import 'package:blaze/view/screens/onboarding/otp.dart';
 import 'package:blaze/view/screens/onboarding/signin.dart';
 import 'package:blaze/view/screens/onboarding/signup.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: OtpScreen(),
+      home: LoggedIn(),
     );
   }
 }
