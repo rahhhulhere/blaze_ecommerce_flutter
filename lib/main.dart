@@ -1,3 +1,4 @@
+import 'package:blaze/view/screens/contact/account.dart';
 import 'package:blaze/view/screens/onboarding/loggedin.dart';
 import 'package:blaze/view/screens/onboarding/otp.dart';
 import 'package:blaze/view/screens/onboarding/signin.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: LoggedIn(),
+      home: AccountScreen(),
     );
   }
 }
