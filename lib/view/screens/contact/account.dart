@@ -21,37 +21,94 @@ class _AccountScreenState extends State<AccountScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.black),
-        backgroundColor: Color(0xFFFAFAFA),
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: const Color(0xFFFAFAFA),
         elevation: 0,
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            const SizedBox(),
             AppText(
               Title: "Account",
               Color: RedColor,
               Size: 20,
             ),
+            const Icon(
+              Icons.search,
+              color: Color(0xFF414141),
+            )
           ],
         ),
         titleTextStyle: const TextStyle(),
       ),
-      drawer: Align(
-        alignment: Alignment.topLeft,
-        child: Container(
-          height: height * 0.8,
-          child: const Drawer(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(50),
-                  topRight: Radius.circular(50)),
-            ),
-            backgroundColor: DrawerColor,
-            child: DrawerWidget(),
+      drawer: const DrawerWidget(),
+      body: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: width * 0.3,
+                height: height * 0.3,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.grey,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AppText(
+                      Title: "Rahul Tiwari",
+                      Size: 16,
+                      Color: PrimaryColor,
+                    ),
+                    AppText(
+                      Title: "tiwarirahul2508@gmail.com",
+                      Size: 12,
+                      Color: PrimaryColor,
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-        ),
+          Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    height: height * 0.045,
+                    width: width * 0.1,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFFFA1A1),
+                      borderRadius: BorderRadius.all(Radius.circular(5)),
+                    ),
+                    child: const Icon(
+                      Icons.edit,
+                      color: Color(0xFFFA5C5C),
+                      size: 20,
+                    ),
+                  ),
+                  AppText(
+                    Title: "Edit Profile",
+                    Color: Colors.black,
+                    Size: 15,
+                  ),
+                  const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    color: Colors.black,
+                    size: 18,
+                  )
+                ],
+              ),
+            ],
+          )
+        ],
       ),
-      body: Text("Hello Rahul"),
     );
   }
 }
