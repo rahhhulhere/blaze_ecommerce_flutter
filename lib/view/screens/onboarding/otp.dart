@@ -11,8 +11,6 @@ class OtpScreen extends StatefulWidget {
 }
 
 class _OtpScreenState extends State<OtpScreen> {
-  dynamic size, height, width;
-
   final TextEditingController _fieldOne = TextEditingController();
   final TextEditingController _fieldTwo = TextEditingController();
   final TextEditingController _fieldThree = TextEditingController();
@@ -21,9 +19,9 @@ class _OtpScreenState extends State<OtpScreen> {
 
   @override
   Widget build(BuildContext context) {
-    size = MediaQuery.of(context).size;
-    height = size.height;
-    width = size.width;
+    double safe = MediaQuery.of(context).padding.top;
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       backgroundColor: GreyColor,
@@ -54,10 +52,10 @@ class _OtpScreenState extends State<OtpScreen> {
             // Logo
             SizedBox(
                 height: height * 0.25,
-                width: width / 1.8,
+                width: width / 1.5,
                 child: Image.asset("asset/images/logo_black.png")),
             //Text
-            SizedBox(
+            Container(
                 height: height * 0.1,
                 child: AppText(
                   Title: "Enter OTP",
@@ -65,7 +63,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   Size: 20,
                 )),
             //OTP TextFields
-            SizedBox(
+            Container(
               height: height * 0.25,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -113,6 +111,7 @@ class _OtpScreenState extends State<OtpScreen> {
             //Text
             SizedBox(
               height: height * 0.1,
+              width: width * 0.8,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
