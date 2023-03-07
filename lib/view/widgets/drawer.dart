@@ -19,7 +19,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
     return Align(
       alignment: Alignment.topLeft,
       child: SizedBox(
-        height: height * 0.8,
+        height: height * 0.85,
         child: SizedBox(
             height: height * 0.8,
             child: Drawer(
@@ -50,7 +50,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                         style: TextStyle(
                           color: TextColor,
                           fontFamily: "Montserrat",
-                          fontSize: 22,
+                          fontSize: 24,
                           fontWeight: FontWeight.w600,
                         ),
                       ),

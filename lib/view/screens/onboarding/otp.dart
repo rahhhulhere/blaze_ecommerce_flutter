@@ -38,7 +38,7 @@ class _OtpScreenState extends State<OtpScreen> {
           children: [
             AppText(
               Title: "Sign Up",
-              Color: RedColor,
+              Color: PrimeColor,
               Size: 18,
             ),
           ],
@@ -95,10 +95,10 @@ class _OtpScreenState extends State<OtpScreen> {
                 width: width,
                 height: height * 0.058,
                 decoration: BoxDecoration(
-                    color: RedColor,
+                    color: PrimeColor,
                     borderRadius: const BorderRadius.all(Radius.circular(30)),
                     border: Border.all(
-                      color: RedColor,
+                      color: PrimeColor,
                       width: 1.0,
                       style: BorderStyle.solid,
                     )),
@@ -121,7 +121,7 @@ class _OtpScreenState extends State<OtpScreen> {
                   ),
                   AppText(
                     Title: "Sign In",
-                    Color: RedColor,
+                    Color: PrimeColor,
                   )
                 ],
               ),

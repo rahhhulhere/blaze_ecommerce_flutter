@@ -2,17 +2,23 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 
 class PasswordFeild extends StatefulWidget {
-  var fieldKey, hintText, labelText, helperText, onSaved, validator, onFieldSubmitted;
-   PasswordFeild({super.key, Key,
-    this.fieldKey,
-    this.hintText,
-    this.labelText,
-    this.onSaved,
-    this.helperText,
-    this.validator,
-    this.onFieldSubmitted
-  });
-
+  var fieldKey,
+      hintText,
+      labelText,
+      helperText,
+      onSaved,
+      validator,
+      onFieldSubmitted;
+  PasswordFeild(
+      {super.key,
+      Key,
+      this.fieldKey,
+      this.hintText,
+      this.labelText,
+      this.onSaved,
+      this.helperText,
+      this.validator,
+      this.onFieldSubmitted});
 
   @override
   State<PasswordFeild> createState() => _PasswordFeildState();
@@ -35,12 +41,10 @@ class _PasswordFeildState extends State<PasswordFeild> {
         labelText: widget.labelText,
         floatingLabelBehavior: FloatingLabelBehavior.never,
         enabledBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-              width: 3, color: RedColor),
+          borderSide: BorderSide(width: 3, color: PrimeColor),
         ),
         focusedBorder: const UnderlineInputBorder(
-          borderSide: BorderSide(
-              width: 3, color: RedColor),
+          borderSide: BorderSide(width: 3, color: PrimeColor),
         ),
         suffixIcon: GestureDetector(
           onTap: () {
@@ -48,9 +52,9 @@ class _PasswordFeildState extends State<PasswordFeild> {
               _obscureText = !_obscureText;
             });
           },
-          child:
-          Icon(_obscureText ? Icons.visibility : Icons.visibility_off,
-          color: RedColor,
+          child: Icon(
+            _obscureText ? Icons.visibility : Icons.visibility_off,
+            color: PrimeColor,
           ),
         ),
       ),

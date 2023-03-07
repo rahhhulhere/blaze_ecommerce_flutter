@@ -2,12 +2,9 @@ import 'package:blaze/view/widgets/constants.dart';
 import 'package:flutter/material.dart';
 
 class OtpInput extends StatelessWidget {
-  final TextEditingController  controller;
+  final TextEditingController controller;
   final bool autoFocus;
-  const OtpInput(
-      this.controller,
-      this.autoFocus,
-      {Key? key}) : super(key: key);
+  const OtpInput(this.controller, this.autoFocus, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,25 +16,22 @@ class OtpInput extends StatelessWidget {
         textAlign: TextAlign.center,
         keyboardType: TextInputType.number,
         controller: controller,
-        cursorColor: RedColor,
+        cursorColor: PrimeColor,
         maxLength: 1,
         decoration: const InputDecoration(
-          filled: true,
-          fillColor: Colors.white,
-          border: UnderlineInputBorder(
-          ),
-    focusedBorder: UnderlineInputBorder(
-    borderSide: BorderSide(
-    width: 3, color: RedColor)),
-
-    counterText: '',
-          hintStyle: TextStyle(color: Colors.black, fontSize: 20.0)),
-        onChanged: (value){
-          if( value.length == 1){
+            filled: true,
+            fillColor: Colors.white,
+            border: UnderlineInputBorder(),
+            focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(width: 3, color: PrimeColor)),
+            counterText: '',
+            hintStyle: TextStyle(color: Colors.black, fontSize: 20.0)),
+        onChanged: (value) {
+          if (value.length == 1) {
             FocusScope.of(context).nextFocus();
           }
         },
-        ),
-      );
+      ),
+    );
   }
 }

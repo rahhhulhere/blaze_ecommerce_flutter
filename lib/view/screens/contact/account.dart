@@ -21,28 +21,6 @@ class _AccountScreenState extends State<AccountScreen> {
     height = size.height - AppBar().preferredSize.height;
     width = size.width;
     return Scaffold(
-      appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: const Color(0xFFFAFAFA),
-        elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const SizedBox(),
-            AppText(
-              Title: "Account",
-              Color: RedColor,
-              Size: 20,
-            ),
-            const Icon(
-              Icons.search,
-              color: Color(0xFF414141),
-            )
-          ],
-        ),
-        titleTextStyle: const TextStyle(),
-      ),
-      drawer: const DrawerWidget(),
       body: SingleChildScrollView(
         child: SizedBox(
           height: height,
@@ -94,13 +72,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.edit,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),
@@ -127,13 +105,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.pin_drop_rounded,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),
@@ -160,13 +138,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.watch_later,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),
@@ -193,13 +171,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.track_changes,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),
@@ -226,13 +204,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.credit_card,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),
@@ -259,13 +237,13 @@ class _AccountScreenState extends State<AccountScreen> {
                             height: height * 0.045,
                             width: width * 0.1,
                             decoration: const BoxDecoration(
-                              color: Color(0xFFFFA1A1),
+                              color: LitePrimeColor,
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5)),
                             ),
                             child: const Icon(
                               Icons.logout,
-                              color: Color(0xFFFA5C5C),
+                              color: IconColor,
                               size: 20,
                             ),
                           ),

@@ -36,7 +36,7 @@ class _LoggedInState extends State<LoggedIn> {
             children: [
               AppText(
                 Title: "Welcome",
-                Color: RedColor,
+                Color: PrimeColor,
                 Size: 18,
               ),
             ],
@@ -76,10 +76,10 @@ class _LoggedInState extends State<LoggedIn> {
                   width: width,
                   height: height * 0.058,
                   decoration: BoxDecoration(
-                      color: RedColor,
+                      color: PrimeColor,
                       borderRadius: const BorderRadius.all(Radius.circular(30)),
                       border: Border.all(
-                        color: RedColor,
+                        color: PrimeColor,
                         width: 1.0,
                         style: BorderStyle.solid,
                       )),
@@ -113,7 +113,7 @@ class _LoggedInState extends State<LoggedIn> {
                     ),
                     AppText(
                       Title: "Sign In",
-                      Color: RedColor,
+                      Color: PrimeColor,
                     )
                   ],
                 ),

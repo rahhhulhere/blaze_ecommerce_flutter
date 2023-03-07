@@ -39,7 +39,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 AppText(
                   Title: "Sign Up",
-                  Color: RedColor,
+                  Color: PrimeColor,
                   Size: 18,
                 )
               ],
@@ -64,7 +64,7 @@ class _SignUpState extends State<SignUp> {
                     height: 30,
                     width: 30,
                     decoration: const BoxDecoration(
-                      color: RedColor,
+                      color: PrimeColor,
                       shape: BoxShape.circle,
                     ),
                     child: const Icon(
@@ -95,10 +95,10 @@ class _SignUpState extends State<SignUp> {
               width: width,
               height: height * 0.058,
               decoration: BoxDecoration(
-                  color: RedColor,
+                  color: PrimeColor,
                   borderRadius: const BorderRadius.all(Radius.circular(30)),
                   border: Border.all(
-                    color: RedColor,
+                    color: PrimeColor,
                     width: 1.0,
                     style: BorderStyle.solid,
                   )),
@@ -116,7 +116,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 AppText(
                   Title: "Sign In",
-                  Color: RedColor,
+                  Color: PrimeColor,
                 )
               ],
             ),

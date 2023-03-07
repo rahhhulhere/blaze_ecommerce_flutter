@@ -4,9 +4,7 @@ import 'constants.dart';
 
 class customTextFeild extends StatefulWidget {
   var title;
-  customTextFeild({Key? key,
-  this.title
-  }) : super(key: key);
+  customTextFeild({Key? key, this.title}) : super(key: key);
 
   @override
   State<customTextFeild> createState() => _customTextFeildState();
@@ -15,22 +13,19 @@ class customTextFeild extends StatefulWidget {
 class _customTextFeildState extends State<customTextFeild> {
   @override
   Widget build(BuildContext context) {
-    return  TextFormField(
+    return TextFormField(
       cursorColor: Colors.red,
       decoration: InputDecoration(
         labelText: widget.title,
         // floatingLabelBehavior: FloatingLabelBehavior.never,
-       labelStyle: TextStyle(
-         color: Colors.grey,
-       ),
+        labelStyle: TextStyle(
+          color: Colors.grey,
+        ),
         enabledBorder: UnderlineInputBorder(
-          borderSide: BorderSide(
-              width: 3, color: RedColor),
+          borderSide: BorderSide(width: 3, color: PrimeColor),
         ),
         focusedBorder: UnderlineInputBorder(
-
-          borderSide: BorderSide(
-              width: 3, color: RedColor),
+          borderSide: BorderSide(width: 3, color: PrimeColor),
         ),
       ),
     );
